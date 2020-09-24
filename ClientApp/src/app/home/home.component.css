@@ -1,0 +1,29 @@
+.image-main img{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 550px;
+    
+}
+.image-main p,h1{
+    color: white;
+    font-weight: bold;
+    
+}
+.image-main p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.image-main h1{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p {
+    color: black;
+    margin-left: 10px;
+}

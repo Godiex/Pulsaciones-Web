@@ -1,0 +1,28 @@
+footer {
+    height:240px;
+    width:100%;
+    background:#1b262c ;
+}
+footer a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.style-font h1{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding-top: 15px;
+}
+.style-font li,p{
+    color: aliceblue;
+}
+.center{
+    text-align: center;
+}
+
+.icon img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}  

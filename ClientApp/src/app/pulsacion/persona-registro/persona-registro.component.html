@@ -1,0 +1,46 @@
+<div class="container ">
+    <div class="jumbotron ditancia-jumbotrom">
+        <section class="main row">
+            <article class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="cabecera-formulario">
+                            <p>Registro De Persona</p>
+                        </div>
+                        <form name="registro" onsubmit="">
+                            <div class="form-group">
+                                <label for="">Escriba su nombre : </label>
+                                <input name="nombre" class="form-control" [(ngModel)]="persona.nombre" type="text" placeholder="Juan manuel" id="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escriba su cedula : </label>
+                                <input name="identificacion" class="form-control" [(ngModel)]="persona.identificacion" type="text" placeholder="1065775558" id="cedula">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Sexo : </label>
+                                <select name="sexo" class="form-control" [(ngModel)]="persona.sexo" id="sexo">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Escriba su edad : </label>
+                                <input name="edad" class="form-control" [(ngModel)]="persona.edad" type="text" placeholder="18 " id="edad">
+                            </div>
+                            <div class="form-group">
+                                <input name="pulsacion" class="form-control"  [(ngModel)]="persona.pulsacion" type="text" placeholder="Numero de Pulsaciones" id="pulsacion" >
+                            </div>
+ 
+                            <input class="btn btn-outline-secondary" type="button" value= "Calcular Pulsaciones">
+                            <button type="button" class="btn btn-dark" (click) = "agregarPersona()"> Registrar Persona </button>
+                        </form>
+                    </div>
+                </div>
+                
+            </article>
+            <aside class="col-md-6 ">
+                <img class="img" src="assets/Img/persona.png" alt="Mi Imagen" width="400" height="400">
+            </aside>
+        </section>
+    </div>
+</div>

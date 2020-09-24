@@ -1,0 +1,15 @@
+.header{
+  background-color: #1b262c;
+  height: 70px;
+}
+
+.header a{ 
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+}
+
+.Icon img{
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+}   

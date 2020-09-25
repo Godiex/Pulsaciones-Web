@@ -20,7 +20,7 @@ export class PersonaRegistroComponent implements OnInit {
   agregarPersona()
   {
     this.calcularPulsacion ();
-    this.personaService.agregar(this.persona);
+    this.personaService.post(this.persona);
     window.alert('persona agregada con exito');
   }
 

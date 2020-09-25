@@ -10,13 +10,18 @@ export class PersonaService {
   Personas = [];
   constructor() { }
 
-  agregar (persona)
-  {
-    this.Personas.push(persona);
+  get(): Persona[] {
+        return JSON.parse(localStorage.getItem('datos'));
   }
-
-  Obtener()
-  {
-    return this.Personas;
+    
+  post(persona: Persona) {
+        let personas: Persona[] = [];
+        if (this.get() != null) {
+          personas = this.get();
+        }
+        personas.push(persona);
+        localStorage.setItem('datos', JSON.stringify(personas));
   }
+    
+    
 }

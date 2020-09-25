@@ -12,7 +12,7 @@ export class PersonaConsultaComponent implements OnInit {
   constructor(private personaService : PersonaService) { }
 
   ngOnInit(): void {
-    this.personas = this.personaService.Obtener();
+    this.personas = this.personaService.get();
   }
 
   personas = [];
